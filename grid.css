@@ -1,0 +1,40 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+main{
+    width: 95vw;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 20vw 60vw 20vw;
+}
+
+header, nav, article, footer{
+    padding: 20px;
+    border: 2px solid black;
+    font-size: 1em;
+    display: flex;
+    align-items: center;
+}
+
+header {
+    background-color: blue;
+    grid-column: span 12;
+}
+
+nav{
+    background-color: green ;
+}
+
+article{
+    background-color: pink;
+    grid-column: span 11;
+}
+
+footer{
+    background-color: aquamarine;
+    grid-column: span 12;
+}
